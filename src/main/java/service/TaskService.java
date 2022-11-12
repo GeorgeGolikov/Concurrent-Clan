@@ -1,8 +1,6 @@
 package service;
 
-import dao.ClanConsumer;
 import dao.ClanProducer;
-import dao.impl.ClanConsumerImpl;
 import dao.impl.ClanProducerImpl;
 import dto.GoldBeforeAndAfter;
 import entity.Clan;
@@ -41,7 +39,7 @@ public class TaskService {
     }
 
     private boolean tryCompleteTask(long taskId) {
-        System.out.printf("Doing very important task #%d", taskId);
+        System.out.printf("Doing very important task #%d\n", taskId);
         return taskId < Math.random() * 50;
     }
 
